@@ -13,7 +13,7 @@
   wordpress:
     depends_on:
       - db
-    image: hubofanmol/project_wordpress:latest
+    image: hubofanmol/wp-project:latest
     ports:
       - "80:80"
     environment:
