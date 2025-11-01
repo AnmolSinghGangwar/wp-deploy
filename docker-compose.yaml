@@ -25,3 +25,5 @@
       - ./wp-content:/var/www/html/wp-content
  volumes:
     db_data:
+
+# This line is added for testing purpose
