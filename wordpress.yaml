@@ -1,5 +1,6 @@
-- name: TestDockercontainercreation
+- name: Twst Docker container creation
   hosts: docker-server
+  become: yes
   tasks:
         - name: Run the Docker build
           shell: docker-compose -f /root/docker-compose.yaml build--no-cache
