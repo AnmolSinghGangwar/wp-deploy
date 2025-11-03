@@ -4,3 +4,5 @@
   tasks:
         - name: Run the Docker build
           shell: docker-compose -f /root/docker-compose.yaml build
+        - name: Run the Docker container
+          shell: docker-compose -f /root/docker-compose.yaml up -d
