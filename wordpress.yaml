@@ -6,3 +6,5 @@
           shell: docker-compose -f /root/docker-compose.yaml build--no-cache
         - name: Run the Docker container
           shell: docker-compose -f /root/docker-compose.yaml up -d
+
+# This is for testing purpose
