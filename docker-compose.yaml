@@ -1,3 +1,4 @@
+
 version: '3'
 
 services:
@@ -25,13 +26,7 @@ services:
       WORDPRESS_DB_NAME: wordpress
     volumes:
       - ./wp-content:/var/www/html/wp-content
-<<<<<<< HEAD
- volumes:
-    db_data:
-#This is for testing 
-
-=======
 
 volumes:
   db_data:
->>>>>>> 0803712e4925bd3b97e755a81f191c9be264a63c
+
