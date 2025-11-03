@@ -1,5 +1,6 @@
- version: '3'
- services:
+version: '3'
+
+services:
   db:
     image: mysql:5.7
     volumes:
@@ -10,6 +11,7 @@
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
+
   wordpress:
     depends_on:
       - db
@@ -23,7 +25,6 @@
       WORDPRESS_DB_NAME: wordpress
     volumes:
       - ./wp-content:/var/www/html/wp-content
- volumes:
-    db_data:
 
-# This line is added for testing purpose
+volumes:
+  db_data:
